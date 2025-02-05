@@ -76,9 +76,11 @@
 
 .text-multiline {
   display: -webkit-box;
-  -webkit-line-clamp: 1; /* Change to the number of lines you want */
+  -webkit-line-clamp: 1; /* Change this number to limit lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
+  text-overflow: ellipsis; /* Adds "..." when text is cut */
+  word-break: break-word; /* Prevents words from breaking awkwardly */
 }
 
 // hover
