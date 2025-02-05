@@ -4,44 +4,45 @@ import { FaShoppingCart } from "react-icons/fa"
 import { IoMdContact } from "react-icons/io"
 import { IoHome } from "react-icons/io5"
 import { RiContactsBookFill } from "react-icons/ri"
+import { NavLink } from "react-router-dom"
 
 function Bootombar() {
   return (
     <div className='container-fluid bg-blue-700 py-3 d-lg-none fixed-bottom'>
         <ul className="nav justify-content-between">
             <li >
-              <a href="" className="d-grid text-light text-decoration-none">
+              <NavLink to={'/'} className="d-grid text-light text-decoration-none">
                 <IoHome className="mx-auto fs-3"/>
                 Home
-              </a>
+              </NavLink>
             </li>
             <li >
-              <a href="" className="d-grid text-light text-decoration-none">
+              <NavLink to={'/product'} className="d-grid text-light text-decoration-none">
                 <AiFillProduct className="mx-auto fs-3"/>
                 Product
-              </a>
+              </NavLink>
             </li>
             <li >
-              <a href="" className="d-grid text-light text-decoration-none">
+              <NavLink to={'/contact'} className="d-grid text-light text-decoration-none">
                 <RiContactsBookFill className="mx-auto fs-3"/>
                 Contact
-              </a>
+              </NavLink>
             </li>
             <li >
-              <a href="" className="d-grid text-light text-decoration-none">
+              <NavLink to={'/cart'} className="d-grid text-light text-decoration-none">
                 <FaShoppingCart className="mx-auto fs-3"/>
                 Cart
-              </a>
+              </NavLink>
             </li>
             <li >
-              <a href="" className="d-grid text-light text-decoration-none">
+              <NavLink to={'/login'} className="d-grid text-light text-decoration-none">
                 <IoMdContact className="mx-auto fs-3"/>
                 Account
-              </a>
+              </NavLink>
             </li>
         </ul>
     </div>
   )
 }
 
-export default Bootombar
+export default Bootombar;

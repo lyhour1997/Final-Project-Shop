@@ -13,6 +13,7 @@ import Contact from './pages/Contact.jsx'
 import PageNotFound from './pages/PageNotFound.jsx'
 import { ProductProvider } from './stores/ProductProvider'
 import AddTocart from './pages/AddTocart.jsx'
+import LoginForm from './pages/LoginForm.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -25,6 +26,7 @@ createRoot(document.getElementById('root')).render(
                     <Route path="/product" element={<Product/> } />
                     <Route path="/contact" element={<Contact/> } />
                     <Route path='/cart' element={<AddTocart/>} />
+                    <Route path='/login' element={<LoginForm/>} />
                 </Route>
                 <Route path='/*' element={<PageNotFound/>} />
             </Routes>

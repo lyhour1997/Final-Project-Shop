@@ -14,13 +14,20 @@ const Header = () => {
     return (
         <div>
             {/* search */}
-            <nav className=' container-fluid shadow  bg-light'>
-                <div className="container py-3 font-poppins p-0 ">
+            <nav className=' container-fluid shadow  bg-light' >
+                <div style={{ height:70}} className="container py-3 font-poppins p-0 ">
                     <div className="row">
-                        <div className="col-3">
-                            <div className=" bg-blue-700 py-2 text-light text-center "><h4 className='m-0 fs-4'>ETEC CENTER</h4></div>
+                        <div className="col-md-3 col-4 ">
+                            <div className=" bg-blue-700 py-2 text-light text-center ">
+                                <h6 className='m-0 py-1 fs-5 d-none d-md-block '>
+                                    ETEC CENTER
+                                </h6>
+                                <h6 className='m-0 fs-5 d-md-none d-block '>
+                                    ETEC 
+                                </h6>
+                            </div>
                         </div>
-                        <div className="col-lg-6 col-9">
+                        <div className="col-lg-6 col-8">
                             <div className=" d-flex justify-content-center align-items-center">
                                 <input type="search" placeholder='Search for Product' className=' py-2 shadow-none border rounded-0 form-control' name="" id="" />
                                 <a href="#">
@@ -30,7 +37,6 @@ const Header = () => {
                                 </a>
                             </div>
                         </div>
-
                         <div className="d-none d-lg-block col-3">
                             <div className="">
 
@@ -41,7 +47,7 @@ const Header = () => {
                                             className="rounded-circle  bg-danger overflow-hidden border"
                                             >
                                             <img
-                                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhFT9XCRVtbrdN-IIBOYrefMpURSstp_rLIg&s"
+                                                src="https://www.sciencefriday.com/wp-content/uploads/2023/10/elon-musk.jpg"
                                                 alt=""
                                                 className="w-100 h-100 object-fit-cover"
                                             />
@@ -55,40 +61,39 @@ const Header = () => {
                                             >
                                                 User Name
                                             </button>
-                                            <ul className="dropdown-menu">
+                                            <ul className="dropdown-menu" onClick={()=>setToggle(false)}>
                                                 <li>
-                                                <a className="dropdown-item" href="#">
-                                                    Action
+                                                <a className="dropdown-item" href="#" > 
+                                                    User A
                                                 </a>
                                                 </li>
                                                 <li>
                                                 <a className="dropdown-item" href="#">
-                                                    Another action
+                                                    User B
                                                 </a>
                                                 </li>
                                                 <li>
                                                 <a className="dropdown-item" href="#">
-                                                    Something else here
+                                                    User C
                                                 </a>
                                                 </li>
                                             </ul>
-                                            </div>
                                         </div>
+                                    </div>
 
                                     ) : (<div className="d-flex justify-content-end">
                                             <button className="btn px-3 bg-blue-700 text-light rounded-0">
                                                 Register
                                             </button>
-                                            <button className="btn px-3 border rounded-0">
-                                                Login
+                                            <button onClick={()=>setToggle(true)} className="btn px-3 border rounded-0">
+                                                <NavLink to={'/login'} >
+                                                    Login
+                                                </NavLink>
                                             </button>
                                         </div>
                                     )
                                 }
                                 
-
-                                
-
                             </div>
                         </div>
 

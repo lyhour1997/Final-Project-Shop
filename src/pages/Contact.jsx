@@ -15,7 +15,7 @@ const Contact = () => {
                     <h1 className=' mt-4 text-uppercase'>Contact Us</h1>
                 </div>
                 
-                <div className='col-12 my-3 '>
+                <div className='col-12 my-3  '>
                     <div className="row">
                         <div className="col-md-5"> 
                             <div style={{ height:525}} className="bg-blue-700 p-4 text-center text-light">
