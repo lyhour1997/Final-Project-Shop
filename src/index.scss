@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --blue-700: #155f8f;
+  --blue-600: #176fa6;
+  --blue-500: #2794d0;
+  --blue-400: #4eaee2;
+  --blue-300: #8bcaee;
+  --blue-200: #c2e2f5;
+}
+
+.bg-blue-700 {
+  background-color: var(--blue-700) !important;
+}
+
+.bg-blue-600 {
+  background-color: var(--blue-600) !important;
+}
+
+.bg-blue-500 {
+  background-color: var(--blue-500) !important;
+}
+
+.bg-blue-400 {
+  background-color: var(--blue-400) !important;
+}
+
+.bg-blue-300 {
+  background-color: var(--blue-300) !important;
+}
+
+.bg-blue-200 {
+  background-color: var(--blue-200) !important;
+}
+
+// text-color
+.text-color-700 {
+  color: var(--blue-700) !important;
+}
+
+.text-color-600 {
+  color: var(--blue-600) !important;
+}
+
+.text-color-500 {
+  color: var(--blue-500) !important;
+}
+
+.text-color-400 {
+  color: var(--blue-400) !important;
+}
+
+.text-color-300 {
+  color: var(--blue-300) !important;
+}
+
+.text-color-200 {
+  color: var(--blue-200) !important;
+}
+
+// ------------ FONT ------------
+.font-poppins {
+  font-family: "Poppins", serif !important;
+}
+.hover-blue:hover {
+  color: var(--blue-500) !important;
+  text-decoration: underline !important;
+}
+.hover-blue:focus {
+  color: var(--blue-500) !important;
+}
+
+.hover-decoration:hover {
+  text-decoration: underline !important;
+
+}
+
+.text-multiline {
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Change to the number of lines you want */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+// hover
+.imagehover img{
+  transition:  0.4s;
+  box-sizing: border-box;
+}
+.imagehover:hover img{
+  transform: scale(1.1);
+}
+
+
+.cateHover img, .abc{
+    transition:  0.4s;
+    box-sizing: border-box;
+}
+.cateHover:hover img{
+    transform: scale(1.1);
+    color: white;
+}
+.cateHover:hover .abc{
+  color: white;
+  background-color: #2794d0 !important;
+}
+
+// 
+.product img{
+   transition: 0.5s;
+}
+.product:hover img{
+    transform: scale(1.1);
+    filter: brightness(80%);
+}
+.product:hover .bbtn{
+    display: block !important;
+    z-index: 99;
+    font-weight: bold;
+}
+.product .bbtn{
+  transition: 0.5s;
+}
+.bg-white{
+  background-color: white;
+}
+.opacity:hover{
+  opacity: 0.8;
+}
