@@ -38,13 +38,13 @@ const Contact = () => {
                             <div className=" p-4 border bg-light">
                                 <h1 className=' text-center'>Get in Touch</h1>
                                 <form  >
-                                    <label htmlFor="">Full Name</label>
+                                    <label htmlFor="Full Name">Full Name</label>
                                     <input type="text" id='' name='' placeholder='Full name' className=' mb-2 rounded-0 shadow-none form-control'/>
-                                    <label htmlFor="">Email</label>
+                                    <label htmlFor="Email">Email</label>
                                     <input type="text" id='' name='' placeholder='Email' className=' mb-2 rounded-0 shadow-none form-control'/>
-                                    <label htmlFor="">Tel</label>
+                                    <label htmlFor="Tel">Tel</label>
                                     <input type="text" id='' name='' placeholder='Phone number' className=' mb-2 rounded-0 shadow-none form-control'/>
-                                    <label htmlFor="">Message</label>
+                                    <label htmlFor="Message">Message</label>
                                     <textarea name="" placeholder='Please tell me. . .' className=' mb-2 form-control rounded-0 border shadow-none' cols="10" rows="5"></textarea>
                                 </form>
                                 
