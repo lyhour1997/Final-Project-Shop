@@ -67,10 +67,10 @@ const AddTocart = () => {
                                         {
                                             cart.map((e,i)=>{
                                                 return(
-                                                    <tbody key={i}>
+                                                    <tbody >
                                                         <h5 className=' fs-3 mb-0 py-4 fw-bold text-center ms-5 ps-5'>Item : {i+1}</h5>
                                                         
-                                                        <tr className=' fs-5'>
+                                                        <tr key={i} className=' fs-5'>
                                                             <td className=' pt-3'>Products: </td>
                                                             <td className=' text-end'>
                                                                 <img src={e.image} style={{ height:50, width:50}} alt="" />

@@ -29,7 +29,7 @@ const LoginForm = () => {
       setErrors(newErrors); // Update state with errors
   
       if (Object.keys(newErrors).length === 0) {
-        alert("Form submitted successfully! ✅"); // Replace with actual login logic
+        alert("Form submitted successfully! "); // Replace with actual login logic
       }
     };
 

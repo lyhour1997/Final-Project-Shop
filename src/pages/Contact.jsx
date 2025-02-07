@@ -39,11 +39,11 @@ const Contact = () => {
                                 <h1 className=' text-center'>Get in Touch</h1>
                                 <form  >
                                     <label htmlFor="">Full Name</label>
-                                    <input type="text" placeholder='Full name' className=' mb-2 rounded-0 shadow-none form-control'/>
+                                    <input type="text" id='' name='' placeholder='Full name' className=' mb-2 rounded-0 shadow-none form-control'/>
                                     <label htmlFor="">Email</label>
-                                    <input type="text" placeholder='Email' className=' mb-2 rounded-0 shadow-none form-control'/>
+                                    <input type="text" id='' name='' placeholder='Email' className=' mb-2 rounded-0 shadow-none form-control'/>
                                     <label htmlFor="">Tel</label>
-                                    <input type="text" placeholder='Phone number' className=' mb-2 rounded-0 shadow-none form-control'/>
+                                    <input type="text" id='' name='' placeholder='Phone number' className=' mb-2 rounded-0 shadow-none form-control'/>
                                     <label htmlFor="">Message</label>
                                     <textarea name="" placeholder='Please tell me. . .' className=' mb-2 form-control rounded-0 border shadow-none' cols="10" rows="5"></textarea>
                                 </form>
