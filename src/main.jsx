@@ -11,7 +11,7 @@ import Home from './pages/Home.jsx'
 import Product from './pages/Product.jsx'
 import Contact from './pages/Contact.jsx'
 import PageNotFound from './pages/PageNotFound.jsx'
-import { ProductProvider } from './stores/ProductProvider'
+import { ProductProvider } from './stores/ProductProvider.jsx'
 import AddTocart from './pages/AddTocart.jsx'
 import LoginForm from './pages/LoginForm.jsx'
 
