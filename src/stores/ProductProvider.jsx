@@ -18,7 +18,7 @@ export const ProductProvider = ({children}) => {
     // step5
     const fetchApi = async  () =>{
         try{
-            const res = await axios.get("https://product-server-json.onrender.com/products");
+            const res = await axios.get("https://product-server-json.onrender.com/products/");
             setProduct(res.data);
             console.table(res.data);
 
