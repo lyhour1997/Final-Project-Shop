@@ -37,16 +37,46 @@ const Contact = () => {
                         <div className="col-md-7 my-md-0 my-4 ">
                             <div className=" p-4 border bg-light">
                                 <h1 className=' text-center'>Get in Touch</h1>
-                                <form  >
-                                    <label htmlFor="Full Name">Full Name</label>
-                                    <input type="text" id='' name='' placeholder='Full name' className=' mb-2 rounded-0 shadow-none form-control'/>
-                                    <label htmlFor="Email">Email</label>
-                                    <input type="text" id='' name='' placeholder='Email' className=' mb-2 rounded-0 shadow-none form-control'/>
-                                    <label htmlFor="Tel">Tel</label>
-                                    <input type="text" id='' name='' placeholder='Phone number' className=' mb-2 rounded-0 shadow-none form-control'/>
-                                    <label htmlFor="Message">Message</label>
-                                    <textarea name="" placeholder='Please tell me. . .' className=' mb-2 form-control rounded-0 border shadow-none' cols="10" rows="5"></textarea>
-                                </form>
+
+                                    <form>
+        <label htmlFor="fullName">Full Name</label>
+        <input 
+            type="text" 
+            id="fullName" 
+            name="fullName" 
+            placeholder="Full name" 
+            className="mb-2 rounded-0 shadow-none form-control"
+        />
+
+        <label htmlFor="email">Email</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="Email" 
+            className="mb-2 rounded-0 shadow-none form-control"
+        />
+
+        <label htmlFor="tel">Tel</label>
+        <input 
+            type="tel" 
+            id="tel" 
+            name="tel" 
+            placeholder="Phone number" 
+            className="mb-2 rounded-0 shadow-none form-control"
+        />
+
+        <label htmlFor="message">Message</label>
+        <textarea 
+            id="message" 
+            name="message" 
+            placeholder="Please tell me..." 
+            className="mb-2 form-control rounded-0 border shadow-none" 
+            cols="10" 
+            rows="5"
+        ></textarea>
+                                    </form>
+
                                 
                                 <a className=' text-decoration-none d-flex justify-content-end align-items-center' href="">
                                     <button className='btn border-black rounded-0 bg-blue-700 px-4 py-2 text-light opacity'>Send </button>

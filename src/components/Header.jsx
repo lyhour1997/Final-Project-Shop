@@ -29,12 +29,19 @@ const Header = () => {
                         </div>
                         <div className="col-lg-6 col-8">
                             <div className=" d-flex justify-content-center align-items-center">
-                                <input type="search" placeholder='Search for Product' className=' py-2 shadow-none border rounded-0 form-control' name="" id="" />
-                                <a href="#">
-                                    <button className='btn border rounded-0 p-2 '>
-                                        <FaSearch className=' fs-6' />
+                                <form action="/search" method="GET" className="d-flex">
+                                    <input 
+                                        type="search" 
+                                        id="searchProduct" 
+                                        name="query" 
+                                        placeholder="Search for Product" 
+                                        className="py-2 shadow-none border rounded-0 form-control"
+                                    />
+                                    <button type="submit" className="btn border rounded-0 p-2">
+                                        <FaSearch className="fs-6" />
                                     </button>
-                                </a>
+                                </form>
+
                             </div>
                         </div>
                         <div className="d-none d-lg-block col-3">
