@@ -122,7 +122,7 @@ const Header = () => {
                         </div>
 
                         <div className=" d-none d-md-flex col-9 align-items-center justify-content-between">
-                                <ul className="nav">
+                            <ul className="nav">
                                 <li>
                                     <NavLink to={"/"} className="nav-link hover-blue text-light">
                                         Home
@@ -135,22 +135,22 @@ const Header = () => {
                                 </li>
                                 <li>
                                     <NavLink to={'/contact'} className="nav-link hover-blue text-light">
-                                    Contact
+                                        Contact
                                     </NavLink>
                                 </li>
-                                </ul>
-                                <div className="">
-                                    <NavLink to={'/cart'} className="nav-link hover-blue text-light">
-                                        <button type="button" className="btn text-light border position-relative me-3 rounded-0">
-                                            <FaShoppingCart className="" />
-                                            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                                {cart.length >= 0 ? cart.length : (0) }
-                                            <span className="visually-hidden">unread messages</span>
-                                            </span>
-                                        </button>
-                                        Shopping
-                                    </NavLink>
-                                </div>
+                            </ul>
+                            <div className="">
+                                <NavLink to={'/cart'} className="nav-link hover-blue text-light">
+                                    <button type="button" className="btn text-light border position-relative me-3 rounded-0">
+                                        <FaShoppingCart className="" />
+                                        <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                            {cart.length >= 0 ? cart.length : (0) }
+                                        <span className="visually-hidden">unread messages</span>
+                                        </span>
+                                    </button>
+                                    Shopping
+                                </NavLink>
+                            </div>
                         </div>
 
                     </div>

@@ -5,6 +5,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { LuRefreshCw } from "react-icons/lu";
 import { FaSearch } from "react-icons/fa";
 import ProductContext from '../stores/ProductProvider';
+import { NavLink } from 'react-router-dom';
 
 const Product = () => {
 
@@ -176,10 +177,12 @@ const Product = () => {
                                                 <div style={{ height:370}} className="product w-100 border ">
                                                     <div style={{ height:'70%'}} className=" cateHover bg-black w-100 overflow-hidden position-relative ">
                                                         <div className=' w-100 position-absolute top-50 start-50 translate-middle z-2 text-center d-none bbtn'>
-                                                            <a href="#">
+                                                          
+                                                            <NavLink to={'/cart'}>
                                                                 <button onClick={()=>addToCart(e.id)} className=' abc btn border text-light m-md-1 m-2 rounded-0'>
                                                                     <FaShoppingCart />
                                                                 </button>
+                                                            </NavLink>
                                                                 <button className=' abc btn border text-light m-md-1 m-2 rounded-0'>
                                                                     <FaRegHeart />
                                                                 </button>
@@ -189,7 +192,7 @@ const Product = () => {
                                                                 <button className=' abc btn border text-light m-md-1 m-2 rounded-0'>
                                                                     < FaSearch />
                                                                 </button>
-                                                            </a>
+                                                            
                                                         </div>
                                                         <img src={e.image} alt="" className=' w-100 h-100 object-fit-cover' />
                                                     </div>
